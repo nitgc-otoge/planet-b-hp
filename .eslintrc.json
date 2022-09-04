@@ -9,7 +9,7 @@
     "eslint:recommended",
     "plugin:vue/vue3-recommended",
     "@vue/typescript/recommended",
-    "eslint-config-prettier"
+    "prettier"
   ],
   "parserOptions": {
     "ecmaVersion": 2021,
