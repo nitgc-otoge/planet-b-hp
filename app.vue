@@ -1,5 +1,4 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <Head>
@@ -15,9 +14,9 @@
   <NuxtLayout name="root">
     <NuxtLayout name="nav">
       <template #logo>
-        <!-- TODO: ロゴの用意 -->
-        <!-- <img src="@/assets/images/logo.jpg" class="w-48"/> -->
-        PLANET-B
+        <NuxtLink to="/">
+          <img src="@/assets/images/logo.png"/>
+        </NuxtLink>
       </template>
       <template #nav-bar>
         <NavBar></NavBar>

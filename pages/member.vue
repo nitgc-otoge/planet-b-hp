@@ -1,0 +1,3 @@
+<template>
+  <MemberList></MemberList>
+</template>
