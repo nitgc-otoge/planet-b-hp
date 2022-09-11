@@ -1,4 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import PageHeader from './components/Common/PageHeader.vue'
+
+const year = new Date().getFullYear()
+</script>
 
 <template>
   <Head>
@@ -11,17 +15,23 @@
       })(document);
     </Script>
   </Head>
-  <NuxtLayout name="root">
-    <NuxtLayout name="nav">
-      <template #logo>
-        <NuxtLink to="/">
-          <img src="@/assets/images/logo.png"/>
-        </NuxtLink>
-      </template>
-      <template #nav-bar>
-        <NavBar></NavBar>
-      </template>
+  <div class="h-screen dark:bg-black dark:text-neutral-200">
+    <NuxtLayout name="root">
+      <NuxtLayout name="nav">
+        <template #logo>
+          <NuxtLink to="/">
+            <img src="@/assets/images/logo.png" />
+          </NuxtLink>
+        </template>
+        <template #nav-bar>
+          <NavBar></NavBar>
+        </template>
+      </NuxtLayout>
+      <PageHeader></PageHeader>
+      <NuxtPage></NuxtPage>
+      <div class="text-center">
+        <span>© {{ year }} PLANET-B</span>
+      </div>
     </NuxtLayout>
-    <NuxtPage></NuxtPage>
-  </NuxtLayout>
+  </div>
 </template>

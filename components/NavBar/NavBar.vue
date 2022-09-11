@@ -7,7 +7,7 @@
       <NavItem to="/works" icon="album"></NavItem>
     </div>
     <div>
-      <NavItem to="/member" icon="people"></NavItem>
+      <NavItem to="/members" icon="people"></NavItem>
     </div>
   </div>
 </template>

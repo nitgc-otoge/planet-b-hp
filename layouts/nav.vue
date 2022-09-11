@@ -1,5 +1,5 @@
 <template>
-  <div class="mb-4 flex flex-wrap justify-between border-b pt-3">
+  <div class="mb-4 flex flex-wrap justify-between pt-4">
     <div class="w-8">
       <slot name="logo"></slot>
     </div>
