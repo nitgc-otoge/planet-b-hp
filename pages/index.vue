@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import SectionTitle from '@/components/Common/SectionTitle.vue'
 </script>
 
 <template>
@@ -7,6 +6,7 @@ import SectionTitle from '@/components/Common/SectionTitle.vue'
     <div class="mb-4">
       <img src="@/assets/images/bandcamp_header.png" />
     </div>
-    <SectionTitle>Links</SectionTitle>
+    <CommonSectionTitle>Links</CommonSectionTitle>
+    <LinkList></LinkList>
   </NuxtLayout>
 </template>
